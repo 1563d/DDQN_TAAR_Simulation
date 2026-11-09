@@ -1,0 +1,987 @@
+{
+  "suite_version": "real_scale_randomized_v1",
+  "description": "Frozen held-out 20-scenario suite for the real-scale three-planner comparison. Reuse this exact file for Proposed, Fan et al. hybrid planner, and mode-aware 3D A*.",
+  "num_scenarios": 20,
+  "scenarios": [
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_01",
+      "source_seed": 1001,
+      "start_cell": [
+        10,
+        85,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        44,
+        56,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            11,
+            79,
+            0
+          ],
+          "max_cell": [
+            14,
+            83,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            18,
+            84,
+            0
+          ],
+          "max_cell": [
+            22,
+            87,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_02",
+      "source_seed": 1002,
+      "start_cell": [
+        11,
+        89,
+        0
+      ],
+      "ground_waypoint_cell": [
+        20,
+        81,
+        0
+      ],
+      "inspection_goal_cell": [
+        47,
+        54,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            10,
+            80,
+            0
+          ],
+          "max_cell": [
+            13,
+            84,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            14,
+            83,
+            0
+          ],
+          "max_cell": [
+            18,
+            86,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_03",
+      "source_seed": 1003,
+      "start_cell": [
+        11,
+        85,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        42,
+        53,
+        29
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            11,
+            81,
+            0
+          ],
+          "max_cell": [
+            14,
+            85,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            84,
+            0
+          ],
+          "max_cell": [
+            21,
+            87,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_04",
+      "source_seed": 1004,
+      "start_cell": [
+        10,
+        86,
+        0
+      ],
+      "ground_waypoint_cell": [
+        20,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        44,
+        53,
+        30
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            10,
+            80,
+            0
+          ],
+          "max_cell": [
+            13,
+            84,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            83,
+            0
+          ],
+          "max_cell": [
+            21,
+            86,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_05",
+      "source_seed": 1005,
+      "start_cell": [
+        12,
+        86,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        44,
+        53,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            13,
+            78,
+            0
+          ],
+          "max_cell": [
+            16,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            84,
+            0
+          ],
+          "max_cell": [
+            21,
+            87,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_06",
+      "source_seed": 1006,
+      "start_cell": [
+        10,
+        89,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        83,
+        0
+      ],
+      "inspection_goal_cell": [
+        44,
+        55,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            12,
+            78,
+            0
+          ],
+          "max_cell": [
+            15,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            85,
+            0
+          ],
+          "max_cell": [
+            21,
+            88,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_07",
+      "source_seed": 1007,
+      "start_cell": [
+        12,
+        86,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        84,
+        0
+      ],
+      "inspection_goal_cell": [
+        46,
+        54,
+        29
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            13,
+            79,
+            0
+          ],
+          "max_cell": [
+            16,
+            83,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            18,
+            87,
+            0
+          ],
+          "max_cell": [
+            22,
+            90,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_08",
+      "source_seed": 1008,
+      "start_cell": [
+        8,
+        86,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        81,
+        0
+      ],
+      "inspection_goal_cell": [
+        44,
+        55,
+        29
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            13,
+            78,
+            0
+          ],
+          "max_cell": [
+            16,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            15,
+            83,
+            0
+          ],
+          "max_cell": [
+            19,
+            86,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_09",
+      "source_seed": 1009,
+      "start_cell": [
+        11,
+        88,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        84,
+        0
+      ],
+      "inspection_goal_cell": [
+        43,
+        57,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            10,
+            82,
+            0
+          ],
+          "max_cell": [
+            13,
+            86,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            18,
+            85,
+            0
+          ],
+          "max_cell": [
+            22,
+            88,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_10",
+      "source_seed": 1010,
+      "start_cell": [
+        10,
+        87,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        81,
+        0
+      ],
+      "inspection_goal_cell": [
+        43,
+        54,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            10,
+            78,
+            0
+          ],
+          "max_cell": [
+            13,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            85,
+            0
+          ],
+          "max_cell": [
+            21,
+            88,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_11",
+      "source_seed": 1011,
+      "start_cell": [
+        12,
+        86,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        48,
+        57,
+        30
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            12,
+            78,
+            0
+          ],
+          "max_cell": [
+            15,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            18,
+            85,
+            0
+          ],
+          "max_cell": [
+            22,
+            88,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_12",
+      "source_seed": 1012,
+      "start_cell": [
+        11,
+        88,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        82,
+        0
+      ],
+      "inspection_goal_cell": [
+        43,
+        54,
+        31
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            11,
+            78,
+            0
+          ],
+          "max_cell": [
+            14,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            87,
+            0
+          ],
+          "max_cell": [
+            21,
+            90,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_13",
+      "source_seed": 1013,
+      "start_cell": [
+        10,
+        88,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        42,
+        53,
+        30
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            13,
+            78,
+            0
+          ],
+          "max_cell": [
+            16,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            18,
+            83,
+            0
+          ],
+          "max_cell": [
+            22,
+            86,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_14",
+      "source_seed": 1014,
+      "start_cell": [
+        8,
+        87,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        48,
+        55,
+        31
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            14,
+            78,
+            0
+          ],
+          "max_cell": [
+            17,
+            82,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            15,
+            83,
+            0
+          ],
+          "max_cell": [
+            19,
+            86,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_15",
+      "source_seed": 1015,
+      "start_cell": [
+        12,
+        89,
+        0
+      ],
+      "ground_waypoint_cell": [
+        20,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        47,
+        55,
+        31
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            10,
+            79,
+            0
+          ],
+          "max_cell": [
+            13,
+            83,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            14,
+            84,
+            0
+          ],
+          "max_cell": [
+            18,
+            87,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_16",
+      "source_seed": 1016,
+      "start_cell": [
+        8,
+        88,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        81,
+        0
+      ],
+      "inspection_goal_cell": [
+        45,
+        57,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            14,
+            79,
+            0
+          ],
+          "max_cell": [
+            17,
+            83,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            16,
+            86,
+            0
+          ],
+          "max_cell": [
+            20,
+            89,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 2
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_17",
+      "source_seed": 1017,
+      "start_cell": [
+        12,
+        89,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        84,
+        0
+      ],
+      "inspection_goal_cell": [
+        42,
+        55,
+        28
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            12,
+            80,
+            0
+          ],
+          "max_cell": [
+            15,
+            84,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            85,
+            0
+          ],
+          "max_cell": [
+            21,
+            88,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_18",
+      "source_seed": 1018,
+      "start_cell": [
+        10,
+        86,
+        0
+      ],
+      "ground_waypoint_cell": [
+        21,
+        82,
+        0
+      ],
+      "inspection_goal_cell": [
+        47,
+        54,
+        29
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            11,
+            81,
+            0
+          ],
+          "max_cell": [
+            14,
+            85,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            17,
+            83,
+            0
+          ],
+          "max_cell": [
+            21,
+            86,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_19",
+      "source_seed": 1019,
+      "start_cell": [
+        12,
+        88,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        81,
+        0
+      ],
+      "inspection_goal_cell": [
+        42,
+        55,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            12,
+            82,
+            0
+          ],
+          "max_cell": [
+            15,
+            86,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            14,
+            87,
+            0
+          ],
+          "max_cell": [
+            18,
+            90,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 0
+    },
+    {
+      "suite_version": "real_scale_randomized_v1",
+      "scenario_id": "test_20",
+      "source_seed": 1020,
+      "start_cell": [
+        9,
+        88,
+        0
+      ],
+      "ground_waypoint_cell": [
+        19,
+        80,
+        0
+      ],
+      "inspection_goal_cell": [
+        43,
+        57,
+        32
+      ],
+      "ground_obstacles": [
+        {
+          "name": "deck_equipment_A",
+          "min_cell": [
+            11,
+            81,
+            0
+          ],
+          "max_cell": [
+            14,
+            85,
+            2
+          ]
+        },
+        {
+          "name": "deck_equipment_B",
+          "min_cell": [
+            14,
+            87,
+            0
+          ],
+          "max_cell": [
+            18,
+            90,
+            2
+          ]
+        }
+      ],
+      "generation_attempt": 1
+    }
+  ]
+}

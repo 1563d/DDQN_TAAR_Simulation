@@ -1,0 +1,4 @@
+SOURCE PROVENANCE
+
+Derived from the user-uploaded taar_paper_ablation_suite_v3. Preserved: 46-D state design, 26-neighbor actions, 46-128-128-26 Q network, Double-DQN target, PER alpha/beta logic, soft target update, collision-exclusive reward, and mode-dependent motion costs.
+Changed only for this experiment: physical scene geometry/scale, distance normalization to the larger grid, output/export utilities, and removal of curriculum/ablation harness.

@@ -1,0 +1,55 @@
+{
+  "selection_basis": "validation only; fixed test_scenarios.json not read",
+  "selection_rule": "converged first; highest best validation success rate; highest best validation return; lower seed as final deterministic tie-breaker",
+  "candidates": [
+    {
+      "seed": 10,
+      "converged": true,
+      "best_validation_success_rate": 0.95,
+      "best_validation_return_mean": 369.2188491353594,
+      "convergence_episode": 680,
+      "checkpoint": "outputs\\seed_10\\checkpoints\\best_model.pt"
+    },
+    {
+      "seed": 11,
+      "converged": true,
+      "best_validation_success_rate": 0.95,
+      "best_validation_return_mean": 370.6880132889146,
+      "convergence_episode": 640,
+      "checkpoint": "outputs\\seed_11\\checkpoints\\best_model.pt"
+    },
+    {
+      "seed": 12,
+      "converged": true,
+      "best_validation_success_rate": 1.0,
+      "best_validation_return_mean": 444.74025680548664,
+      "convergence_episode": 2320,
+      "checkpoint": "outputs\\seed_12\\checkpoints\\best_model.pt"
+    },
+    {
+      "seed": 13,
+      "converged": true,
+      "best_validation_success_rate": 1.0,
+      "best_validation_return_mean": 444.71973654722206,
+      "convergence_episode": 3300,
+      "checkpoint": "outputs\\seed_13\\checkpoints\\best_model.pt"
+    },
+    {
+      "seed": 14,
+      "converged": true,
+      "best_validation_success_rate": 0.95,
+      "best_validation_return_mean": 369.7835078072236,
+      "convergence_episode": 1060,
+      "checkpoint": "outputs\\seed_14\\checkpoints\\best_model.pt"
+    }
+  ],
+  "selected": {
+    "seed": 12,
+    "converged": true,
+    "best_validation_success_rate": 1.0,
+    "best_validation_return_mean": 444.74025680548664,
+    "convergence_episode": 2320,
+    "checkpoint": "outputs\\seed_12\\checkpoints\\best_model.pt"
+  },
+  "copied_to": "deployment_checkpoint\\proposed_validation_selected.pt"
+}

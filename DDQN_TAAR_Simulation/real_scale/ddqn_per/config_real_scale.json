@@ -1,0 +1,183 @@
+{
+  "scene_name": "IEA15MW_scale_offshore_inspection",
+  "voxel_resolution_m": 5.0,
+  "size_x": 90,
+  "size_y": 100,
+  "size_z": 60,
+  "physical_extent_m": [
+    450.0,
+    500.0,
+    300.0
+  ],
+  "turbine": {
+    "reference": "IEA Wind 15-MW offshore reference turbine (Gaertner et al., NREL/TP-5000-75698, 2020)",
+    "hub_height_m": 150.0,
+    "rotor_diameter_m": 240.0,
+    "tower_center_cell": [
+      45,
+      50
+    ],
+    "tower_radius_cells": 1,
+    "rotor_radius_cells": 24
+  },
+  "task": {
+    "start_cell": [
+      10,
+      87,
+      0
+    ],
+    "ground_waypoint_cell": [
+      20,
+      82,
+      0
+    ],
+    "inspection_goal_cell": [
+      45,
+      55,
+      30
+    ],
+    "max_steps": 500
+  },
+  "training": {
+    "seed": 10,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_fraction": 0.75,
+    "eval_interval": 20,
+    "checkpoint_interval": 100,
+    "moving_average_window": 50,
+    "eval_episodes": 20,
+    "validation_scenario_file": "validation_scenarios.json",
+    "reserved_test_scenario_file": "test_scenarios.json",
+    "max_episodes": 4000,
+    "epsilon_decay_episodes": 1500,
+    "convergence_success_rate": 0.95,
+    "convergence_consecutive_evals": 5,
+    "formal_seeds": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "agent": {
+    "lr": 0.0015,
+    "gamma": 0.99,
+    "tau": 0.01,
+    "batch_size": 128,
+    "update_every": 4,
+    "grad_steps_per_update": 2,
+    "replay_capacity": 100000,
+    "per_alpha": 0.6,
+    "per_beta_start": 0.4,
+    "per_beta_anneal_steps": 200000,
+    "feasibility_action_masking": true,
+    "action_mask_definition": "one-step destination voxel in-bounds and unoccupied; no graph search or heuristic look-ahead"
+  },
+  "scenario_randomization": {
+    "protocol": "fixed 20-scenario randomized benchmark unchanged across all planners; training domain-randomized; validation separate fixed 20-scenario suite; feasibility-aware action masking enabled",
+    "start_jitter_cells": [
+      2,
+      2,
+      0
+    ],
+    "waypoint_jitter_cells": [
+      1,
+      2,
+      0
+    ],
+    "goal_jitter_cells": [
+      3,
+      2,
+      2
+    ],
+    "ground_obstacles": [
+      {
+        "name": "deck_equipment_A",
+        "base_min_cell": [
+          12,
+          80,
+          0
+        ],
+        "size_cells": [
+          3,
+          4,
+          2
+        ],
+        "jitter_cells": [
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "name": "deck_equipment_B",
+        "base_min_cell": [
+          16,
+          85,
+          0
+        ],
+        "size_cells": [
+          4,
+          3,
+          2
+        ],
+        "jitter_cells": [
+          2,
+          2,
+          0
+        ]
+      }
+    ],
+    "test_scenario_seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020
+    ],
+    "validation_scenario_seeds": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "train_scenario_seed_base": 30000,
+    "train_seed_stride": 100000,
+    "shared_training_scenario_schedule": true,
+    "training_scenario_requires_3d_path": true,
+    "train_seed_stride_used_when_shared_schedule_false": 100000
+  }
+}
